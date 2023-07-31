@@ -1,7 +1,5 @@
 # Portfolio Website
 
-## Description
-
 This is my personal portfolio website built using Next.js and Tailwind CSS. The website showcases my work, skills, and achievements as a student and aspiring software engineer. It serves as a platform to present my projects and connect with fellow professionals, potential collaborators, and anyone interested in my journey.
 
 ## Live Demo
