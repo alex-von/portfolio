@@ -18,7 +18,7 @@ export function ModeToggle() {
       {isDarkMode ? (
           <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
       ) : (
-          <SunIcon className="h-[1.2rem] w-[1.2rem] light:text-zinc-700" />
+          <SunIcon className="h-[1.2rem] w-[1.2rem] dark:text-white" />
       )}
     </Button>
   );
