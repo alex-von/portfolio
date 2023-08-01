@@ -2,7 +2,7 @@
 export const Welcome = () => {
     const about = "Im a passionate and dedicated student at the University of Minnesota, studying Information Technology Infrastructure and Computer Science. I have a strong interest in full stack development and I'm currently honing my skills in using modern tools like React, Next.js, Tailwind CSS, Langchain, and Supabase."
     return (
-        <div className='mt-12'>
+        <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
                 <div className='flex items-center'>
                     <div>
