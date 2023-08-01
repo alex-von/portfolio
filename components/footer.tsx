@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Footer = () => {
     return (
-        <footer className="border-t p-6 sticky">
+        <footer className="border-t p-4 sticky">
             <div className="flex justify-between max-w-4xl mx-auto items-center">
                 <div className='flex gap-2 items-center'>
                     <Avatar className='aspect-square w-6 h-6'>

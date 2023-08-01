@@ -61,6 +61,10 @@ export const Post = () => {
             <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4">
                 <h3 className="text-xs">Posts Coming Soon</h3>
             </div>
+            <Link href='/posts' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline">
+                More Posts
+                <ArrowRightIcon className='w-4 h-4' />
+            </Link>
         </div>
     )
 }

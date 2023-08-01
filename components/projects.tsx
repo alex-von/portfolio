@@ -92,6 +92,10 @@ export const Projects = () => {
             <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4">
                 <h3 className="text-xs">Projects Coming Soon</h3>
             </div>
+            <Link href='/projects' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline">
+                More Projects
+                <ArrowRightIcon className='w-4 h-4' />
+            </Link>
         </div>
     )
 }
