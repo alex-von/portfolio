@@ -65,7 +65,7 @@ export const Projects = () => {
     return (
         <div className="flex flex-col mx-auto p-4 w-full">
             <h1 className="font-medium">Projects</h1>
-            <p className="text-xs text-zinc-500 mb-6">{"Things I've built"}</p>
+            <p className="text-xs text-zinc-500 mb-6">Things I built</p>
             <div className="space-y-4">
             {projects.map((project) => (
                 <ProjectCard {...project} />
