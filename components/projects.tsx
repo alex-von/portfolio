@@ -67,8 +67,8 @@ export const Projects = () => {
             <h1 className="font-medium">Projects</h1>
             <p className="text-xs text-zinc-500 mb-6">Things I built</p>
             <div className="space-y-4">
-            {projects.map((project) => (
-                <ProjectCard {...project} />
+            {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
             ))}
             </div>
         </div>
