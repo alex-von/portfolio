@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 
 type Project = {
@@ -46,8 +47,17 @@ const projects = [
 const ProjectCard = (project: Project) => {
     return (
         <div className="flex flex-col space-y-3 rounded-xl border p-6 cursor-pointer">
-            <h3 className="font-medium text-sm">{project.title}</h3>
-            <p className="text-xs">{project.description}</p>
+            <div>
+                <div className="flex justify-between pb-3">
+                    <h3 className="font-medium text-sm">{project.title}</h3>
+                    <div className="flex space-x-2">
+                        <SiNextdotjs className='w-4 h-4'></SiNextdotjs>
+                        <SiTailwindcss className='w-4 h-4'></SiTailwindcss>
+                        <SiTypescript className='w-4 h-4'></SiTypescript>
+                    </div>
+                </div>
+                <p className="text-xs">{project.description}</p>
+            </div>
             <div>
             <Button variant='secondary' className='w-full rounded-xl text-xs' asChild>
                 <a target="_blank" href="https://github.com/alex-von">
