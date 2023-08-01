@@ -1,5 +1,5 @@
 import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon, FileTextIcon } from '@radix-ui/react-icons'
-import { SiNextdotjs, SiSupabase, SiTailwindcss } from 'react-icons/si'
+import { SiJavascript, SiNextdotjs, SiPython, SiSupabase, SiTailwindcss, SiTypescript } from 'react-icons/si'
 
 export const Skills = () => {
     return (
@@ -29,16 +29,28 @@ export const Skills = () => {
                 </div>
             </div>
             <div className="grid grid-cols-2 space-y-4 rounded-xl border p-4">
-                <div className='flex gap-4 items-center text-sm'>
+                <div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
                     <SiNextdotjs className="w-4 h-4" />
                     Next.js
                 </div>
-                <div className='flex gap-4 items-center text-sm'>
+                <div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
                     <SiTailwindcss className="w-4 h-4" />
                     Tailwind CSS
-                </div><div className='flex gap-4 items-center text-sm'>
+                </div>
+                <div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
                     <SiSupabase className="w-4 h-4" />
                     Supabase
+                </div>
+                <div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
+                    <SiPython className="w-4 h-4" />
+                    Python
+                </div>
+                <div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
+                    <SiJavascript className="w-4 h-4" />
+                    Javascript
+                </div><div className='flex gap-4 items-center text-sm font-medium text-zinc-800 dark:text-white'>
+                    <SiTypescript className="w-4 h-4" />
+                    Typescript
                 </div>
             </div>
         </div>
