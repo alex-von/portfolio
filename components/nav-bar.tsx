@@ -4,7 +4,7 @@ import { Logo } from "./logo"
 
 export const NavBar = () => {
     return (
-        <nav className="flex justify-between">
+        <nav className="flex justify-between w-full">
             <Logo />
             <div className="flex space-x-3">
                 <Contact />

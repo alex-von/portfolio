@@ -1,11 +1,9 @@
-import { ModeToggle } from "@/components/mode-toggle"
-import { NavBar } from "@/components/nav-bar"
-import { Welcome } from "@/components/welcome"
+import { Header } from "@/components/header"
+
 export default function Home() {
   return (
-    <main className="lg:px-24 md:px-12 p-6">
-      <NavBar />
-      <Welcome />
+    <main className="w-full min-h-screen flex flex-col justify-between">
+      <Header />
     </main>
   )
 }
