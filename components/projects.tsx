@@ -45,17 +45,16 @@ const projects = [
 
 const ProjectCard = (project: Project) => {
     return (
-        <div className="flex flex-col space-y-3 rounded-xl border p-6 shadow">
+        <div className="flex flex-col space-y-3 rounded-xl border p-6 cursor-pointer">
             <h3 className="font-medium text-sm">{project.title}</h3>
             <p className="text-xs">{project.description}</p>
             <div>
-            <Button className='w-full rounded-xl text-xs' asChild>
+            <Button variant='secondary' className='w-full rounded-xl text-xs' asChild>
                 <a target="_blank" href="https://github.com/alex-von">
                     <GitHubLogoIcon className='w-4 h-4 mr-2' />
                     View on GitHub
                 </a>
             </Button>
-            
             </div>
         </div>
     )
@@ -63,14 +62,21 @@ const ProjectCard = (project: Project) => {
 
 export const Projects = () => {
     return (
-        <div className="flex flex-col mx-auto p-4 w-full">
-            <h1 className="font-medium">Projects</h1>
-            <p className="text-xs text-zinc-500 mb-6">Things I built</p>
-            <div className="space-y-4">
-            {projects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-            ))}
+        <div className="flex flex-col space-y-6 mx-auto p-4 w-full">
+            <div>
+                <h1 className="font-medium">Projects</h1>
+                <p className="text-xs text-zinc-500">Things I built</p>
             </div>
+            <div className="space-y-4">
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                ))}
+            </div>
+            <Button variant='secondary' className='w-full rounded-xl text-xs' asChild>
+                <a target="_blank" href="">
+                    More Projects
+                </a>
+            </Button>
         </div>
     )
 }
