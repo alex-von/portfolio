@@ -1,4 +1,5 @@
 import { Button } from "./ui/button"
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 type Post = {
     title: string,
@@ -17,7 +18,7 @@ const PostCard = (post: Post) => {
 }
 
 export const Post = () => {
-    
+
     const posts: Post[] = [
         {
             title: 'Notion ToDo App', 
@@ -53,6 +54,7 @@ export const Post = () => {
             <Button variant='secondary' className='w-full rounded-xl text-xs' asChild>
                 <a target="_blank" href="">
                     More Posts
+                    <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
             </Button>
         </div>

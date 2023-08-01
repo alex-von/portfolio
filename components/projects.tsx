@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 
@@ -48,12 +48,12 @@ const ProjectCard = (project: Project) => {
     return (
         <div className="flex flex-col space-y-3 rounded-xl border p-6 cursor-pointer">
             <div>
-                <div className="flex justify-between pb-3">
+                <div className="flex items-center justify-between pb-3">
                     <h3 className="font-medium text-sm">{project.title}</h3>
                     <div className="flex space-x-2">
-                        <SiNextdotjs className='w-4 h-4'></SiNextdotjs>
-                        <SiTailwindcss className='w-4 h-4'></SiTailwindcss>
-                        <SiTypescript className='w-4 h-4'></SiTypescript>
+                        <SiNextdotjs className='w-4 h-4 fill-zinc-700 dark:fill-white'></SiNextdotjs>
+                        <SiTailwindcss className='w-4 h-4 fill-zinc-700 dark:fill-white'></SiTailwindcss>
+                        <SiTypescript className='w-4 h-4 fill-zinc-700 dark:fill-white'></SiTypescript>
                     </div>
                 </div>
                 <p className="text-xs">{project.description}</p>
@@ -85,6 +85,7 @@ export const Projects = () => {
             <Button variant='secondary' className='w-full rounded-xl text-xs' asChild>
                 <a target="_blank" href="">
                     More Projects
+                    <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
             </Button>
         </div>
