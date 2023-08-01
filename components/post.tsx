@@ -42,7 +42,7 @@ export const Post = () => {
     ]
 
     return (
-        <div className="flex flex-col space-y-6 mx-auto p-4 w-full">
+        <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <Link href='/posts'>
                 <h1 className="font-medium">Posts</h1>
                 <p className="text-xs text-zinc-500">Things I wrote</p>
@@ -58,7 +58,7 @@ export const Post = () => {
                     <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
             </Button> */}
-            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6">
+            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4">
                 <h3 className="text-xs">Posts Coming Soon</h3>
             </div>
         </div>
