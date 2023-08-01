@@ -43,7 +43,7 @@ export const Post = () => {
     return (
         <div className="flex flex-col space-y-6 mx-auto p-4 w-full">
             <div>
-                <h1 className="font-medium">Post</h1>
+                <h1 className="font-medium">Posts</h1>
                 <p className="text-xs text-zinc-500">Things I wrote</p>
             </div>
             {/* <div className="space-y-4">
@@ -58,7 +58,7 @@ export const Post = () => {
                 </a>
             </Button> */}
             <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6 animate-pulse">
-                <h3 className="text-xs">Post Coming Soon</h3>
+                <h3 className="text-xs">Posts Coming Soon</h3>
             </div>
         </div>
     )
