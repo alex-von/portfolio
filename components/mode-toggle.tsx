@@ -14,11 +14,11 @@ export function ModeToggle() {
   };
 
   return (
-    <Button variant="ghost" size="icon" onClick={toggleTheme}  >
+    <Button className='rounded-full dark:bg-zinc-800 dark:border-zinc-700' variant="outline" size="icon" onClick={toggleTheme}  >
       {isDarkMode ? (
           <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
       ) : (
-          <SunIcon className="h-[1.2rem] w-[1.2rem]" />
+          <SunIcon className="h-[1.2rem] w-[1.2rem] light:text-zinc-700" />
       )}
     </Button>
   );
