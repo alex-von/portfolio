@@ -20,10 +20,10 @@ export const Connect = () => {
                     <EnvelopeClosedIcon className="h-[1.2rem] w-[1.2rem] text-zinc-700 dark:text-white"/>
                     alex.vongseng@gmail.com
                 </a>
-                <a className='flex gap-3 items-center text-sm font- underline'>
+                {/* <a className='flex gap-3 items-center text-sm font- underline'>
                     <FileTextIcon className="h-[1.2rem] w-[1.2rem] text-zinc-700 dark:text-white"/>
                     View/Download Resume
-                </a>
+                </a> */}
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ export const Footer = () => {
                         <AvatarFallback>AV</AvatarFallback>
                     </Avatar>
                     <p className="text-semibold text-xs text-zinc-600">
-                        Made by <Link className="underline" href="/">Alex</Link>
+                        Made by <Link className="underline" href="https://github.com/alex-von" target='_blank'>Alex</Link>
                     </p>
                 </div>
                 <p className="text-xs text-zinc-600">
