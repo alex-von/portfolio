@@ -58,7 +58,7 @@ export const Post = () => {
                     <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
             </Button> */}
-            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6 animate-pulse">
+            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6">
                 <h3 className="text-xs">Posts Coming Soon</h3>
             </div>
         </div>
