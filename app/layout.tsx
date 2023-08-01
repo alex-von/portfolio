@@ -23,7 +23,7 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className='flex flex-col min-h-screen max-w-7xl m-auto'>
+          <div className='min-h-screen max-w-4xl m-auto border'>
             {children}
           </div>
         </ThemeProvider>
