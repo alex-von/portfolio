@@ -1,5 +1,6 @@
 import { Button } from "./ui/button"
 import { ArrowRightIcon } from '@radix-ui/react-icons'
+import Link from 'next/link'
 
 type Post = {
     title: string,
@@ -42,10 +43,10 @@ export const Post = () => {
 
     return (
         <div className="flex flex-col space-y-6 mx-auto p-4 w-full">
-            <div>
+            <Link href='/posts'>
                 <h1 className="font-medium">Posts</h1>
                 <p className="text-xs text-zinc-500">Things I wrote</p>
-            </div>
+            </Link>
             {/* <div className="space-y-4">
                 {posts.map((posts, index) => (
                     <PostCard key={index} {...posts} />

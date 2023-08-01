@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { GitHubLogoIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
-
+import Link from 'next/link';
 
 type Project = {
     title: string,
@@ -74,10 +74,10 @@ export const Projects = () => {
 
     return (
         <div className="flex flex-col space-y-6 mx-auto p-4 w-full">
-            <div>
+            <Link href='/projects'>
                 <h1 className="font-medium">Projects</h1>
                 <p className="text-xs text-zinc-500">Things I built</p>
-            </div>
+            </Link>
             {/* <div className="space-y-4">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />

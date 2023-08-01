@@ -1,6 +1,6 @@
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export const Welcome = () => {
-    const about = "Im a passionate and dedicated student at the University of Minnesota, studying Information Technology Infrastructure and Computer Science. I have a strong interest in full stack development and I'm currently honing my skills in using modern tools like React, Next.js, Tailwind CSS, Langchain, and Supabase."
     return (
         <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
@@ -10,15 +10,14 @@ export const Welcome = () => {
                             Alex Vongseng
                         </h1>
                         <p className="text-xs font-medium text-zinc-500">
-                            Senior @ University of Minnesota - Twin Cities
+                            CS & IT @ University of Minnesota - Twin Cities
                         </p>
+                        <a href="https://linkedin.com/in/alex-vongseng" className="hover:underline flex items-center text-sm font-medium mt-6">
+                            About me
+                            <ArrowRightIcon className="w-4 h-4 ml-2" />
+                        </a>
                     </div>
                 </div>
-                {/* <div>
-                    <p className='lg:max-w-[75%]'>
-                        {about}
-                    </p>
-                </div> */}
             </div>
         </div>
     )
