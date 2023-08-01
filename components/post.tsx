@@ -46,7 +46,7 @@ export const Post = () => {
                 <h1 className="font-medium">Post</h1>
                 <p className="text-xs text-zinc-500">Things I wrote</p>
             </div>
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
                 {posts.map((posts, index) => (
                     <PostCard key={index} {...posts} />
                 ))}
@@ -56,7 +56,10 @@ export const Post = () => {
                     More Posts
                     <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
-            </Button>
+            </Button> */}
+            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6 animate-pulse">
+                <h3 className="text-xs">Post Coming Soon</h3>
+            </div>
         </div>
     )
 }

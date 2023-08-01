@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 import { Post } from "@/components/post"
 import { Projects } from "@/components/projects"
@@ -11,7 +10,6 @@ export default function Home() {
         <Projects />
         <Post />
       </div>
-      <Footer />
     </main>
   )
 }

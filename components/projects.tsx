@@ -78,7 +78,7 @@ export const Projects = () => {
                 <h1 className="font-medium">Projects</h1>
                 <p className="text-xs text-zinc-500">Things I built</p>
             </div>
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}
@@ -88,7 +88,10 @@ export const Projects = () => {
                     More Projects
                     <ArrowRightIcon className='w-4 h-4 ml-2' />
                 </a>
-            </Button>
+            </Button> */}
+            <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-6 animate-pulse">
+                <h3 className="text-xs">Projects Coming Soon</h3>
+            </div>
         </div>
     )
 }
