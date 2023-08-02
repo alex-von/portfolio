@@ -5,10 +5,9 @@ type Job = {
     title: string,
     company: string,
     date: string,
-    description: HTMLElement
 }
 
-const Job = ({ title, company, date, description }: Job) => {
+const Job = ({ title, company, date, }: Job) => {
     return (
         <div>
             <div className='flex items-center justify-between'>
@@ -21,7 +20,7 @@ const Job = ({ title, company, date, description }: Job) => {
             <div className='border-l border-primary m-2.5 pl-6'>
                 <p className='text-xs text-zinc-500 pb-4'>{date}</p>
                 <p className='text-sm'>
-                    {description}
+                    Placeholder
                 </p>
             </div>
         </div>
@@ -39,21 +38,11 @@ export const Experience = () => {
             <div className="flex flex-col rounded-xl border p-4">
                 <Job 
                     title='Position' 
-                    description={
-                        <ul className='list-disc space-y-2 pl-4'>
-                            <li>Placeholder</li>
-                        </ul>
-                    }
                     company={'Company'}
                     date={'Start Date - End Date'}
                 />
                 <Job 
                     title='Position' 
-                    description={
-                        <ul className='list-disc space-y-2 pl-4'>
-                            <li>Placeholder</li>
-                        </ul>
-                    }
                     company={'Company'}
                     date={'Start Date - End Date'}
                 />
