@@ -167,21 +167,21 @@ export const Skills = () => {
                 </li>
 
                 { showMore ? moreSkills : null}
-
-                <Button variant='ghost' className='w-full h-6 rounded-xl text-xs text-zinc-500' asChild onClick={() => setShowMore(!showMore)}>
-                    { showMore ? 
-                        <div className='flex gap-2'>
-                            <p>Show Less</p>
-                            <ChevronUpIcon className='w-4 h-4' />
-                        </div> 
-                        : 
-                        <div className='flex gap-2' >
-                            <p>Show More</p>
-                            <ChevronDownIcon className='w-4 h-4' />
-                        </div>
-                    }
-                </Button>
-
+                <div className='text-right'>
+                    <Button variant='outline' className='w-fit h-6 text-xs text-zinc-500 dark:bg-transparent dark:hover:border-white' asChild onClick={() => setShowMore(!showMore)}>
+                        { showMore ? 
+                            <div className='flex gap-2'>
+                                <p>Show Less</p>
+                                <ChevronUpIcon className='w-4 h-4' />
+                            </div> 
+                            : 
+                            <div className='flex gap-2' >
+                                <p>Show More</p>
+                                <ChevronDownIcon className='w-4 h-4' />
+                            </div>
+                        }
+                    </Button>
+                </div>
             </ul>
         </div>
     )
