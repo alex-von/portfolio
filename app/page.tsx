@@ -2,7 +2,7 @@ import { Connect } from "@/components/connect"
 import { Header } from "@/components/header"
 import { Post } from "@/components/post"
 import { Projects } from "@/components/projects"
-import { Skills } from "@/components/skill-education"
+import { Education, Skills } from "@/components/skill-education"
 
 export default function Home() {
   return (
@@ -13,8 +13,11 @@ export default function Home() {
         <Post />
       </div>
       <div className="md:flex mx-auto mb-12 w-full max-w-4xl ">
-        <Skills />
-        <Connect />
+        <Education />
+        <div className="w-full">
+          <Skills />
+          <Connect />
+        </div>
       </div>
     </main>
   )
