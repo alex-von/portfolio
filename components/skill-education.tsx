@@ -30,15 +30,25 @@ export const Education = () => {
             <div className="space-y-4 rounded-xl border p-4">
                 <div>
                     <h1 className='text-sm font-medium'>
-                        Univeristy of Minnesota
+                        Univeristy of Minnesota - Twin Cities
                     </h1>
                     <div className='flex justify-between text-xs text-zinc-500'>
                         <p>Bachelor of Applied Science</p>
                         <p>May 2024</p>
                     </div>
-                    <p className='text-xs mt-4'>Information Technology Infrastructure</p>
-                    <p className='text-xs'>Computer Science</p>
-                    <Link href='/education/umn' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline hover:text-white transition">
+                    <div className='my-4 text-sm font-medium'>
+                        <div className='flex whitespace-nowrap items-center gap-2 justify-between'>
+                            <p>Information Technology Infrastructure</p>
+                            <div className='border-b w-full'></div>
+                            <p className='text-zinc-500'>Major</p>
+                        </div>
+                        <div className='flex whitespace-nowrap items-center gap-2 justify-between'>
+                            <p>Computer Science</p>
+                            <div className='border-b w-full'></div>
+                            <p className='text-zinc-500'>Minor</p>
+                        </div>
+                    </div>
+                    <Link href='/education/umn' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline dark:hover:text-white transition">
                         Learn More
                         <ArrowRightIcon className='w-4 h-4' />
                     </Link>
