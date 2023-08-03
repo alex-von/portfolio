@@ -36,7 +36,7 @@ export const Education = () => {
                         <p>Bachelor of Applied Science</p>
                         <p>May 2024</p>
                     </div>
-                    <div className='my-4 text-sm font-medium'>
+                    <div className='my-4 text-sm space-y-2 font-medium'>
                         <div className='flex whitespace-nowrap items-center gap-2 justify-between'>
                             <p>Information Technology Infrastructure</p>
                             <div className='border-b w-full'></div>

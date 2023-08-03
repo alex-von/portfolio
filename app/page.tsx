@@ -16,7 +16,6 @@ export default function Home() {
       <div className="md:flex mx-auto mb-12 w-full max-w-4xl ">
         <Education />
         <div className="w-full">
-          <Experience />
           <Skills />
           <Connect />
         </div>

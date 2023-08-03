@@ -41,11 +41,6 @@ export const Experience = () => {
                     company={'Company'}
                     date={'Start Date - End Date'}
                 />
-                <Job 
-                    title='Position' 
-                    company={'Company'}
-                    date={'Start Date - End Date'}
-                />
             </div>
             
         </div>
