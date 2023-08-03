@@ -4,7 +4,7 @@ import { Welcome } from "./welcome";
 export const Header = () => {
     return (
         <header className="flex flex-col bg-secondary border-b">
-            <div className="max-w-4xl mx-auto p-4 pb-16 w-full">
+            <div className="max-w-5xl mx-auto p-4 pb-16 w-full">
                 <NavBar />
                 <Welcome />
             </div>
@@ -15,18 +15,18 @@ export const Header = () => {
 export const PostHeader = () => {
     return (
         <header className="flex flex-col bg-secondary border-b">
-            <div className="max-w-4xl mx-auto p-4 pb-16 w-full">
+            <div className="max-w-5xl mx-auto p-4 pb-16 w-full">
                 <NavBar />
                 <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
                 <div className='flex items-center'>
                     <div>
-                        <h1 className="font-medium text-primary">
+                        <h1>
                             Posts
                         </h1>
-                        <p className="text-xs font-medium text-zinc-500">
+                        <h2>
                             Things I wrote
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -39,18 +39,18 @@ export const PostHeader = () => {
 export const ProjectsHeader = () => {
     return (
         <header className="flex flex-col bg-secondary border-b">
-            <div className="max-w-4xl mx-auto p-4 pb-16 w-full">
+            <div className="max-w-5xl mx-auto p-4 pb-16 w-full">
                 <NavBar />
                 <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
                 <div className='flex items-center'>
                     <div>
-                        <h1 className="font-medium text-primary">
+                        <h1>
                             Projects
                         </h1>
-                        <p className="text-xs font-medium text-zinc-500">
+                        <h2>
                             Things I made
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -63,18 +63,18 @@ export const ProjectsHeader = () => {
 export const UmnHeader = () => {
     return (
         <header className="flex flex-col bg-secondary border-b">
-            <div className="max-w-4xl mx-auto p-4 pb-16 w-full">
+            <div className="max-w-5xl mx-auto p-4 pb-16 w-full">
                 <NavBar />
                 <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
                 <div className='flex items-center'>
                     <div>
-                        <h1 className="font-medium text-primary">
+                        <h1>
                             University of Minnesota - Twin Cities
                         </h1>
-                        <p className="text-xs font-medium text-zinc-500">
+                        <h2>
                             Information Technology Infrastructure | Computer
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -87,18 +87,18 @@ export const UmnHeader = () => {
 export const EducationHeader = () => {
     return (
         <header className="flex flex-col bg-secondary border-b">
-            <div className="max-w-4xl mx-auto p-4 pb-16 w-full">
+            <div className="max-w-5xl mx-auto p-4 pb-16 w-full">
                 <NavBar />
                 <div className='mt-32'>
             <div className='flex flex-col justify-center h-full space-y-6'>
                 <div className='flex items-center'>
                     <div>
-                        <h1 className="font-medium text-primary">
+                        <h1>
                             Education
                         </h1>
-                        <p className="text-xs font-medium text-zinc-500">
+                        <h2>
                             {"Places I've learned from"}
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>

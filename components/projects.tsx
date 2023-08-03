@@ -75,8 +75,8 @@ export const Projects = () => {
     return (
         <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <Link href='/projects'>
-                <h1 className="font-medium">Projects</h1>
-                <p className="text-xs text-zinc-500">Things I built</p>
+                <h1>Projects</h1>
+                <h2>Things I built</h2>
             </Link>
             {/* <div className="space-y-4">
                 {projects.map((project, index) => (
@@ -90,9 +90,9 @@ export const Projects = () => {
                 </a>
             </Button> */}
             <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4">
-                <h3 className="text-xs">Projects Coming Soon</h3>
+                <h2>Projects Coming Soon</h2>
             </div>
-            <Link href='/projects' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline">
+            <Link href='/projects' className="flex gap-2 justify-end items-center text-sm font-medium text-zinc-500 hover:underline">
                 More Projects
                 <ArrowRightIcon className='w-4 h-4' />
             </Link>

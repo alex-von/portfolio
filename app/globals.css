@@ -75,4 +75,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1 {
+    @apply text-lg font-medium;
+  }
+  h2 {
+    @apply text-sm text-zinc-500;
+  }
+  p {
+    @apply text-sm;
+  }
 }

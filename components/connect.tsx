@@ -4,8 +4,8 @@ export const Connect = () => {
     return (
         <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <div>
-                <h1 className="font-medium">Connect</h1>
-                <p className="text-xs text-zinc-500">Where to find me</p>
+                <h1>Connect</h1>
+                <h2>Where to find me</h2>
             </div>
             <div className="space-y-4 rounded-xl border p-4">
                 <a className='flex gap-3 items-center text-sm font- underline' target="_blank" href="https://www.linkedin.com/in/alex-vongseng/">
