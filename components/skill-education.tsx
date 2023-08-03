@@ -22,10 +22,10 @@ export const Education = () => {
     return (
         <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <Link href='/education'>
-                <h1 className="font-medium">Education</h1>
-                <p className="text-xs text-zinc-500">
+                <h1>Education</h1>
+                <h2>
                     {"Places I've learned from"}
-                </p>
+                </h2>
             </Link>
             <div className="space-y-4 rounded-xl border p-4">
                 <div>
@@ -48,7 +48,7 @@ export const Education = () => {
                             <p className='text-zinc-500'>Minor</p>
                         </div>
                     </div>
-                    <Link href='/education/umn' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline dark:hover:text-white transition">
+                    <Link href='/education/umn' className="flex gap-2 justify-end items-center text-sm font-medium text-zinc-500 hover:underline dark:hover:text-white transition">
                         Learn More
                         <ArrowRightIcon className='w-4 h-4' />
                     </Link>
@@ -136,8 +136,8 @@ export const Skills = () => {
     return (
         <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <div>
-                <h1 className="font-medium">Skills</h1>
-                <p className="text-xs text-zinc-500">Technologies I know and have used</p>
+                <h1>Skills</h1>
+                <h2>Technologies I know and have used</h2>
             </div>
             <ul className="rounded-xl border p-4 space-y-4">
                 

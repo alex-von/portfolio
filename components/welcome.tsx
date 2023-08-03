@@ -9,9 +9,9 @@ export const Welcome = () => {
                         <h1 className="font-medium text-primary">
                             Alex Vongseng
                         </h1>
-                        <p className="text-xs font-medium text-zinc-500">
+                        <h2 className="font-medium">
                             CS & IT @ University of Minnesota - Twin Cities
-                        </p>
+                        </h2>
                         {/* <a href="https://linkedin.com/in/alex-vongseng" className="hover:underline flex items-center text-sm font-medium mt-6">
                             About me
                             <ArrowRightIcon className="w-4 h-4 ml-2" />

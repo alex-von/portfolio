@@ -44,8 +44,8 @@ export const Post = () => {
     return (
         <div className="flex flex-col space-y-4 mx-auto p-4 w-full">
             <Link href='/posts'>
-                <h1 className="font-medium">Posts</h1>
-                <p className="text-xs text-zinc-500">Things I wrote</p>
+                <h1>Posts</h1>
+                <h2>Things I wrote</h2>
             </Link>
             {/* <div className="space-y-4">
                 {posts.map((posts, index) => (
@@ -59,9 +59,9 @@ export const Post = () => {
                 </a>
             </Button> */}
             <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4">
-                <h3 className="text-xs">Posts Coming Soon</h3>
+                <h2>Posts Coming Soon</h2>
             </div>
-            <Link href='/posts' className="flex gap-2 justify-end text-xs font-medium text-zinc-500 hover:underline">
+            <Link href='/posts' className="flex gap-2 justify-end items-center text-sm font-medium text-zinc-500 hover:underline">
                 More Posts
                 <ArrowRightIcon className='w-4 h-4' />
             </Link>

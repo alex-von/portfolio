@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
       <EducationHeader />
-      <div className="space-y-4 mx-auto my-12 w-full max-w-4xl p-4">
-          <div className="flex text-xs gap-1 text-zinc-500 mb-12">
+      <div className="space-y-4 mx-auto my-12 w-full max-w-5xl p-4">
+          <div className="flex items-center text-sm gap-1 text-zinc-500 mb-12">
             <Link href="/" className="hover:underline">home</Link>
             <ChevronRightIcon className="w-4 h-4" />
             <Link href="/education" className="hover:underline">education</Link>
           </div>
           <div className="space-y-4 rounded-xl border p-4">
                 <div>
-                    <h1 className='text-sm font-medium'>
+                    <h1>
                         Univeristy of Minnesota
                     </h1>
                     <div className='flex justify-between text-xs text-zinc-500'>
