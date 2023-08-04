@@ -2,13 +2,12 @@ import "server-only";
 
 import { Client } from "@notionhq/client";
 import { NotionToMarkdown } from "notion-to-md"
-import { get } from "http";
 
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-export const getSinglePost = async (slug) => {
+export const getSinglePost = async (slug: string) => {
   const n2m = new NotionToMarkdown({ notionClient: notion });
   const response = await notion.databases.query({
     database_id: process.env.NOTION_DATABASE_ID,
@@ -74,7 +73,7 @@ const getPageMetaData = (post) => {
   };
 };
 
-function getToday ({datestring}) {
+function getToday ({datestring}: {datestring: string}) {
   const months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   let date = new Date();
