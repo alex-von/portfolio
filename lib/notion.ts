@@ -10,7 +10,7 @@ const notion = new Client({
 export const getSinglePost = async (slug: string) => {
   const n2m = new NotionToMarkdown({ notionClient: notion });
   const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
+    database_id: process.env.NOTION_DATABASE_ID!,
     filter: {
       property: "Slug",
       formula: {
@@ -33,7 +33,7 @@ export const getSinglePost = async (slug: string) => {
 
 export const getAllPublished = async () => {
   const posts = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
+    database_id: process.env.NOTION_DATABASE_ID!,
     filter: {
       property: "Published",
       checkbox: {
@@ -54,9 +54,9 @@ export const getAllPublished = async () => {
   });
 };
 
-const getPageMetaData = (post) => {
-  const getTags = (tags) => {
-    const allTags = tags.map((tag) => {
+const getPageMetaData = (post:any) => {
+  const getTags = (tags:any) => {
+    const allTags = tags.map((tag:any) => {
       return tag.name;
     });
 
