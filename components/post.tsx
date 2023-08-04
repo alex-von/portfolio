@@ -9,7 +9,7 @@ export const AllPosts = async () => {
 
     return (
         posts.map((post) => (
-            <div className="space-y-3 rounded-xl p-4 hover:bg-secondary border transition">
+            <div key={post.id} className="space-y-3 rounded-xl p-4 hover:bg-secondary border transition">
             <Link href={`/posts/${post.slug}`} key={post.id}>
                 <h1 className="text-sm font-semibold">{post.title}</h1>
                 <h2>{post.description}</h2>
@@ -31,7 +31,7 @@ export const RecentPost = async () => {
             {
                 // only show 3 most recent posts
                 posts.slice(0,3).map((post) => (
-                    <div className="space-y-3 rounded-xl p-4 hover:bg-secondary border transition">
+                    <div key={post.id} className="space-y-3 rounded-xl p-4 hover:bg-secondary border transition">
                     <Link href={`/posts/${post.slug}`} key={post.id}>
                         <h1 className="text-sm font-semibold">{post.title}</h1>
                         <h2>{post.description}</h2>
