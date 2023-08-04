@@ -1,8 +1,9 @@
 import { PostHeader } from "@/components/header"
 import { ChevronRightIcon } from "@radix-ui/react-icons"
 import Link from "next/link"
+import { AllPosts } from "@/components/post"
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
       <PostHeader />
@@ -12,9 +13,7 @@ export default function Home() {
             <ChevronRightIcon className="w-4 h-4" />
             <Link href="/posts" className="hover:underline">posts</Link>
           </div>
-          <div className="flex flex-col space-y-3 rounded-xl bg-secondary p-4 w-full">
-              <h2>Posts Coming Soon</h2>
-          </div>
+            <AllPosts />
       </div>
     </main>
   )
