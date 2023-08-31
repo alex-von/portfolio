@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import Head from 'next/head'
-import { Footer } from '@/components/footer'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,9 +24,8 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className='dark:bg-zinc-900 flex flex-col justify-between'>
+          <div className='bg-accent-background flex flex-col items-center'>
             {children}
-            <Footer />
           </div>
         </ThemeProvider>
         <Analytics />
