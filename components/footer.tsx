@@ -15,7 +15,7 @@ export const Footer = () => {
                     </p>
                 </div>
                 <p className="text-xs text-zinc-600">
-                    © 2023 Alex Vongseng
+                    © 2025 Alex Vongseng
                 </p>
             </div>
         </footer>
