@@ -34,7 +34,6 @@ export default function Home() {
         </div>
         {/* Menu */}
         <div className='pb-6'>
-          {/* <h4 className='pb-6'>Menu</h4> */}
           <Accordion type="single" collapsible className='border-b-0'>
             <AccordionItem value="about">
               <AccordionTrigger className='border-b-0'>About</AccordionTrigger>
