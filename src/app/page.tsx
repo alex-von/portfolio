@@ -8,7 +8,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import {
-  ChevronRightIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
   SewingPinFilledIcon
