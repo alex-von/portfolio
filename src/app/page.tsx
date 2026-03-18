@@ -88,7 +88,7 @@ export default function Home() {
       {/* Footer */}
       <div className='border-t border-muted-background py-3 w-full md:mt-[10vh]'>
         <div className='flex justify-between items-center '>
-          <p className='text-xs text-muted-foreground'>© 2025 Alex Vongseng</p>
+          <p className='text-xs text-muted-foreground'>© 2026 Alex Vongseng</p>
           <div className='flex space-x-2'>
             <Button variant='ghost' asChild>
               <Link href='https://github.com/alex-von' target='_blank'>
